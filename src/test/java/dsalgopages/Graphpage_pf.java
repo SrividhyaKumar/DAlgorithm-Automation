@@ -1,6 +1,7 @@
 package dsalgopages;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,7 @@ public class Graphpage_pf {
 	{
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	public void clickgetstarted()

@@ -1,6 +1,7 @@
 package dsalgopages;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -46,6 +47,7 @@ public class Treepage_pf {
 	{ 
 		PageFactory.initElements(driver, this);
 		this.driver = driver; 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		}
 
 

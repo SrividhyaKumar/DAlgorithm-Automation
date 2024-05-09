@@ -1,6 +1,7 @@
 package dsalgopages;
 
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -28,6 +29,7 @@ import org.openqa.selenium.support.PageFactory;
 	{ 
 		PageFactory.initElements(driver,this);
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
     public void getUrl()
     {

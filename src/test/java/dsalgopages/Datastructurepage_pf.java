@@ -2,6 +2,7 @@ package dsalgopages;
 
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -33,6 +34,7 @@ public Datastructurepage_pf(WebDriver driver)
 { 
 	PageFactory.initElements(driver, this);
 	this.driver = driver; 
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 public void Homepage() { driver.get("https://dsportalapp.herokuapp.com/home"); }
