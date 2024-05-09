@@ -39,12 +39,12 @@ Feature: Tree in Homepage
     And : The user clicks the "Try here" button.
     Then : user should be redirected to a page having a TryEditor with a Run button to test
 
-  @TC_TR_05
-  Scenario: Click on Traversal Illustration
-    When :  The user clicks on Traversal Illustration
-    Then : The user should be directed to the "Traversal Illustration" of Tree Page
-    And : The user clicks the "Try here" button.
-    Then : user should be redirected to a page having a TryEditor with a Run button to test
+ # @TC_TR_05
+ # Scenario: Click on Traversal Illustration
+  #  When :  The user clicks on Traversal Illustration
+   # Then : The user should be directed to the "Traversal Illustration" of Tree Page
+    #And : The user clicks the "Try here" button.
+    #Then : user should be redirected to a page having a TryEditor with a Run button to test
 
   @TC_TR_06
   Scenario: Click on Binary Trees

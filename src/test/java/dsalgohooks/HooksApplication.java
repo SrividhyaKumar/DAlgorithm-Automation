@@ -31,6 +31,7 @@ public class HooksApplication
 	@After (order=0)
 	public void quitBrowser()
 	{
+		driver.close();
 		driver.quit();
 	}
 	@After (order=1)

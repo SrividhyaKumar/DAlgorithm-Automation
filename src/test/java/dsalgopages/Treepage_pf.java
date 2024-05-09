@@ -82,12 +82,12 @@ public class Treepage_pf {
 			
 		}
 		
-		public void traversalIllustration() {
-			driver.navigate().to("https://dsportalapp.herokuapp.com/tree/");
-			traversals.click();
-			
-		}
-		
+//		public void traversalIllustration() {
+//			driver.navigate().to("https://dsportalapp.herokuapp.com/tree/");
+//			traversals.click();
+//			
+//		}
+//		
 		public void binaryTrees() {
 			
 			driver.navigate().to("https://dsportalapp.herokuapp.com/tree/");

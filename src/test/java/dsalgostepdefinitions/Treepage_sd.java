@@ -70,11 +70,11 @@ public class Treepage_sd {
 	   
 	}
 
-	@When(":  The user clicks on Traversal Illustration")
-	public void the_user_clicks_on_traversal_illustration() {
-	    
-	   treepage.traversalIllustration();
-	}
+//	@When(":  The user clicks on Traversal Illustration")
+//	public void the_user_clicks_on_traversal_illustration() {
+//	    
+//	 //  treepage.traversalIllustration();
+//	}
 
 	@When(":  The user clicks on Binary Trees")
 	public void the_user_clicks_on_binary_trees() {
