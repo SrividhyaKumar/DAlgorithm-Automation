@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 import dsalgoutilities.configreader;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-      features = {"C:\\Users\\rajes\\eclipse-workspace\\DAlgorithm-Automation\\src\\test\\resources\\dsalgofeatures"},
+      features = {"./src/test/resources/dsalgofeatures"},
       glue= {"dsalgostepdefinitions","dsalgohooks"},
      // tags= "@Datastructurepage" ,
       plugin={"pretty",
