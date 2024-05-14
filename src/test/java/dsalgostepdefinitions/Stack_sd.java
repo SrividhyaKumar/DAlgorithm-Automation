@@ -43,7 +43,7 @@ public class Stack_sd {
 	
 //	@Given(": The user is on DS Algo Homepage")
 //	public void the_user_is_on_ds_algo_homepage() {
-//	    sp.Homepage();
+//	sp.Homepage();
 //	   
 //	}
 

@@ -12,7 +12,7 @@ public class LinkedList_sd {
 	
 	LinkedListPages_pf linkedlist = new LinkedListPages_pf(DriverFactory.getDriver());
 	Loginpages_pf LL = new Loginpages_pf(DriverFactory.getDriver());
-//	DataStructuresPages data = new DataStructuresPages(DriverFactory.getDriver());
+// DataStructuresPages data = new DataStructuresPages(DriverFactory.getDriver());
 //	Arraypages array = new Arraypages(DriverFactory.getDriver());
 	
 
