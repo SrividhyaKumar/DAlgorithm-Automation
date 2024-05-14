@@ -6,11 +6,12 @@ import org.junit.Assert;
 import dsalgodrivers.DriverFactory;
 import io.cucumber.java.en.*;
 import dsalgopages.Loginpages_pf;
+
 //import dsalgopages.Arraypages;
 import dsalgopages.StackPages_pf;
 
 
-public class Stacksteps {
+public class Stack_sd {
 	StackPages_pf sp = new StackPages_pf(DriverFactory.getDriver());
 	Loginpages_pf st = new Loginpages_pf(DriverFactory.getDriver());
 	
@@ -40,11 +41,11 @@ public class Stacksteps {
 		Thread.sleep(2000);
 	}
 	
-	@Given(": The user is on DS Algo Homepage")
-	public void the_user_is_on_ds_algo_homepage() {
-	    //datastructure.Homepage();
-	   
-	}
+//	@Given(": The user is on DS Algo Homepage")
+//	public void the_user_is_on_ds_algo_homepage() {
+//	sp.Homepage();
+//	   
+//	}
 
 	StackPages_pf stack = new StackPages_pf(DriverFactory.getDriver());
 	//Arraypages array = new Arraypages(DriverFactory.getDriver());

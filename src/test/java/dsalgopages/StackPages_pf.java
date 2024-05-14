@@ -28,6 +28,7 @@ public class StackPages_pf {
 	@FindBy (xpath="//a[contains(text(),'Implementation')]") WebElement implementation;
 	@FindBy (xpath="//a[contains(text(),'Applications')]")WebElement application;
 	
+	public void Homepage() { driver.get("https://dsportalapp.herokuapp.com/home"); }
 	
 	public StackPages_pf(WebDriver driver) {
 		PageFactory.initElements(driver, this);
