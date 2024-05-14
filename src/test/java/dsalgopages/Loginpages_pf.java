@@ -1,4 +1,6 @@
 package dsalgopages;
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +24,7 @@ public class Loginpages_pf
 	public Loginpages_pf(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	public void enterUsernamePassword(String username1, String password1) {

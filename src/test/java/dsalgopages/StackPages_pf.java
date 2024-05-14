@@ -1,7 +1,7 @@
 package dsalgopages;
 
 import java.io.IOException;
-
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -33,6 +33,7 @@ public class StackPages_pf {
 	public StackPages_pf(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	public void getStarted() {

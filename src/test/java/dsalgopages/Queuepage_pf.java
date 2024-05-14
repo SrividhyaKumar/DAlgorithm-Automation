@@ -1,4 +1,6 @@
 package dsalgopages;
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +23,7 @@ public class Queuepage_pf {
 	{
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	public void home() {
 		driver.get(url);
