@@ -21,7 +21,7 @@ public class DriverFactory {
 			System.out.println("Browser is : "+ browser);	
 			
 			if(browser.equalsIgnoreCase("chrome")) {
-				//options.addArguments("headless");
+				options.addArguments("headless");
 				//options.addArguments("--remote-allow-origins=*");
 				LoggerLoad.info("ChromeBrowser testing");
 				WebDriverManager.chromedriver().setup();
