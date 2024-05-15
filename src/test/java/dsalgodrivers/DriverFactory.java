@@ -26,7 +26,6 @@ public class DriverFactory {
                                 options.addArguments("--disable-gpu");
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--disable-gpu");
-				options.binary_location = "/snap/bin/chromedriver-linux64/chromedriver";
 				options.setBinary("/snap/bin/chromedriver-linux64/chromedriver");
 				LoggerLoad.info("ChromeBrowser testing");
 				WebDriverManager.chromedriver().setup();
