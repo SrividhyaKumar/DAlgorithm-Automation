@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>49/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 08 16:42:05 EDT 2024</td>
+<td>Started on:</td><td>Tue May 14 20:04:52 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>116 seconds (116615 ms)</td>
+<tr><td>Total time:</td><td>214 seconds (214589 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,233 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Types of Binary Trees", "Tree in Homepage"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed1c7e671035a2226e00682083f985c0, sendKeysToElement {id=f.A5A9496D9157193AA6CD2A21CC5218A7.d.B33AA146B1A29002D7E6F6FB2C2F85CB.e.61, value=[Ljava.lang.CharSequence;@3b2e1f89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52330}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52330/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed1c7e671035a2226e00682083f985c0)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: ed1c7e671035a2226e00682083f985c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy53.sendKeys(Unknown Source)
+	at dsalgopages.Treepage_pf.pythonEditor(Treepage_pf.java:161)
+	at dsalgostepdefinitions.Treepage_sd.user_should_be_redirected_to_a_page_having_a_try_editor_with_a_run_button_to_test(Treepage_sd.java:52)
+	at ✽.: user should be redirected to a page having a TryEditor with a Run button to test(file:///C:/Users/rajes/eclipse-workspace/DAlgorithm-Automation/src/test/resources/dsalgofeatures/Treepage.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1034711486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1034711486'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed1c7e671035a2226e00682083f985c0, sendKeysToElement {id=f.A5A9496D9157193AA6CD2A21CC5218A7.d.B33AA146B1A29002D7E6F6FB2C2F85CB.e.61, value=[Ljava.lang.CharSequence;@3b2e1f89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52330}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52330/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed1c7e671035a2226e00682083f985c0)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: ed1c7e671035a2226e00682083f985c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy53.sendKeys(Unknown Source)
+	at dsalgopages.Treepage_pf.pythonEditor(Treepage_pf.java:161)
+	at dsalgostepdefinitions.Treepage_sd.user_should_be_redirected_to_a_page_having_a_try_editor_with_a_run_button_to_test(Treepage_sd.java:52)
+	at ✽.: user should be redirected to a page having a TryEditor with a Run button to test(file:///C:/Users/rajes/eclipse-workspace/DAlgorithm-Automation/src/test/resources/dsalgofeatures/Treepage.feature:61)
+</pre></div></td>
+<td>37</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "the user is on tryeditor and write valid code and run button", "Queue"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1919281a280188cd1ae5dd978329d0c, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51692/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1919281a280188cd1ae5dd978329d0c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace430231885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace430231885'><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1919281a280188cd1ae5dd978329d0c, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51692/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1919281a280188cd1ae5dd978329d0c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div></td>
+<td>8</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Types of Trees", "Tree in Homepage"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68e1ff82bd37a434d2e0c623966ba9f1, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52210}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52210/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68e1ff82bd37a434d2e0c623966ba9f1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace197878209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197878209'><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [68e1ff82bd37a434d2e0c623966ba9f1, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52210}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52210/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68e1ff82bd37a434d2e0c623966ba9f1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div></td>
+<td>4</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation of Binary Trees", "Tree in Homepage"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f4d3cc81b641c3c1d22667c2bdd6cb0, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52448/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f4d3cc81b641c3c1d22667c2bdd6cb0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1845422514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1845422514'><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.156)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f4d3cc81b641c3c1d22667c2bdd6cb0, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\rajes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52448/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f4d3cc81b641c3c1d22667c2bdd6cb0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:856)
+	at dsalgodrivers.DriverFactory.init_driver(DriverFactory.java:48)
+	at dsalgohooks.HooksApplication.launchBrowser(HooksApplication.java:29)
+</pre></div></td>
+<td>8</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,44 +303,224 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Tree traversals", "Tree in Homepage"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Tree Traversals", "Tree in Homepage"</td>
 <td></td>
-<td>14</td>
+<td>44</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get started", "Tree in Homepage"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation of BST", "Tree in Homepage"</td>
 <td></td>
-<td>26</td>
+<td>15</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Overview of Trees", "Tree in Homepage"</td>
+<td></td>
+<td>35</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click try here and redirected to python editor", "Cucumber Array example"</td>
+<td></td>
+<td>39</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Introduction link", "Linked List functionality testing"</td>
+<td></td>
+<td>52</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Implementation", "Stack in Homepage"</td>
+<td></td>
+<td>55</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Tree traversals", "Tree in Homepage"</td>
+<td></td>
+<td>24</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
 <td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario testing with valid inputs", "Login Functionality Testing"</td>
 <td></td>
-<td>37</td>
+<td>28</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Search Trees", "Tree in Homepage"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Types of Linked List", "Linked List functionality testing"</td>
 <td></td>
-<td>10</td>
+<td>50</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation in Python", "Tree in Homepage"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to stack page", "Stack in Homepage"</td>
 <td></td>
-<td>17</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Types of Binary Trees", "Tree in Homepage"</td>
-<td></td>
-<td>21</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation of Binary Trees", "Tree in Homepage"</td>
-<td></td>
-<td>13</td>
+<td>55</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
 <td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
 <td></td>
-<td>34</td>
+<td>40</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Terminologies", "Tree in Homepage"</td>
+<td></td>
+<td>30</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on Get Started", "Graph in Homepage"</td>
+<td></td>
+<td>43</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter valid usensme and  enter numreic in both password confirm then it shows error", "Cucumber Register example"</td>
+<td></td>
+<td>48</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Time complexity", "Data Structures functionality page"</td>
+<td></td>
+<td>78</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on Array link and rdirect to array in python", "Cucumber Array example"</td>
+<td></td>
+<td>43</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on LinkedList Get Started from home page", "Linked List functionality testing"</td>
+<td></td>
+<td>36</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
+<td></td>
+<td>28</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "CLick on Graph", "Graph in Homepage"</td>
+<td></td>
+<td>42</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Search Trees", "Tree in Homepage"</td>
+<td></td>
+<td>21</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Operations in Stack", "Stack in Homepage"</td>
+<td></td>
+<td>68</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on try here", "Queue"</td>
+<td></td>
+<td>22</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on Graph Representations", "Graph in Homepage"</td>
+<td></td>
+<td>36</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter a invalid username then click register  then it shows please enter valid username", "Cucumber Register example"</td>
+<td></td>
+<td>41</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get started", "Tree in Homepage"</td>
+<td></td>
+<td>35</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "the user is on the queue in python page", "Queue"</td>
+<td></td>
+<td>44</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter valid username and password", "Cucumber Register example"</td>
+<td></td>
+<td>36</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
+<td></td>
+<td>40</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter username and password and leave the password confiration empty and click registration then error message shown in  password confirmation", "Cucumber Register example"</td>
+<td></td>
+<td>32</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Insertion", "Linked List functionality testing"</td>
+<td></td>
+<td>45</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
+<td></td>
+<td>48</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Deletion", "Linked List functionality testing"</td>
+<td></td>
+<td>45</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Structures", "Data Structures functionality page"</td>
+<td></td>
+<td>37</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Traversal", "Linked List functionality testing"</td>
+<td></td>
+<td>51</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "enter invalid code and see error message", "Queue"</td>
+<td></td>
+<td>17</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Don't enter any field then click on register and error msg is displayed  at username", "Cucumber Register example"</td>
+<td></td>
+<td>32</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Trees", "Tree in Homepage"</td>
+<td></td>
+<td>37</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Applications", "Stack in Homepage"</td>
+<td></td>
+<td>36</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "without entering code click on run button  no error is displayed", "Cucumber Array example"</td>
+<td></td>
+<td>37</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the username and then leave other fields empty then click registeranderror message is displayed at password field", "Cucumber Register example"</td>
+<td></td>
+<td>33</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters DS Algo Portal", "GetStartedPage testing"</td>
+<td></td>
+<td>41</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Entering  different passwords  in both fields then it shows error message", "Cucumber Register example"</td>
+<td></td>
+<td>50</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Implement Linked List in Python", "Linked List functionality testing"</td>
+<td></td>
+<td>52</td>
+<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
+<tr>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation in Python", "Tree in Homepage"</td>
+<td></td>
+<td>24</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
 <td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
@@ -121,89 +528,24 @@ function toggleAllBoxes() {
 <td>39</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Time complexity", "Data Structures functionality page"</td>
-<td></td>
-<td>91</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Tree Traversals", "Tree in Homepage"</td>
-<td></td>
-<td>37</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on Get Started", "Graph in Homepage"</td>
-<td></td>
-<td>60</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Binary Trees", "Tree in Homepage"</td>
-<td></td>
-<td>21</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "click on Graph Representations", "Graph in Homepage"</td>
-<td></td>
-<td>62</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Overview of Trees", "Tree in Homepage"</td>
-<td></td>
-<td>38</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Implementation of BST", "Tree in Homepage"</td>
-<td></td>
-<td>6</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Structures", "Data Structures functionality page"</td>
-<td></td>
-<td>74</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "CLick on Graph", "Graph in Homepage"</td>
-<td></td>
-<td>75</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
-<td></td>
-<td>66</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Traversal Illustration", "Tree in Homepage"</td>
-<td></td>
-<td>19</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Types of Trees", "Tree in Homepage"</td>
-<td></td>
-<td>33</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
-<td></td>
-<td>63</td>
-<td>dsalgotestrunner.TestRunner@1800a575</td></tr>
-<tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Terminologies", "Tree in Homepage"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks Register button", "GetStartedPage testing"</td>
 <td></td>
 <td>34</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters DS Algo Portal", "GetStartedPage testing"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user clicks on collections", "Queue"</td>
 <td></td>
-<td>84</td>
+<td>36</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario testing with invalid data", "Login Functionality Testing"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks on Create a Linked List", "Linked List functionality testing"</td>
 <td></td>
-<td>74</td>
+<td>48</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 <tr>
-<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User clicks Register button", "GetStartedPage testing"</td>
+<td title='dsalgotestrunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsalgotestrunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open Ds Algo Home page and clicks started button and redirected to Array page", "Cucumber Array example"</td>
 <td></td>
-<td>75</td>
+<td>36</td>
 <td>dsalgotestrunner.TestRunner@1800a575</td></tr>
 </table><p>
 </body>

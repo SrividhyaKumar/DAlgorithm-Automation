@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="defineBrowser"/>
-          <include name="runScenario" invocation-numbers="10"/>
+          <include name="runScenario" invocation-numbers="50 27 44 47"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- dsalgotestrunner.TestRunner -->
