@@ -72,8 +72,9 @@ public class Stack_sd {
 	}
 
 	@Then(": user should be redirected to the page having an tryEditor with a Run button to test")
-	public void user_should_be_redirected_to_the_page_having_an_try_editor_with_a_run_button_to_test() throws IOException {
-		//sp.pythonEditor();
+	public void user_should_be_redirected_to_the_page_having_an_try_editor_with_a_run_button_to_test() throws IOException, InterruptedException {
+		Thread.sleep(2000);
+		sp.pythonEditor();
 
 	}
 

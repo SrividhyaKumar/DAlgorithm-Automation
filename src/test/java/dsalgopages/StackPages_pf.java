@@ -66,24 +66,24 @@ public class StackPages_pf {
 		}
 	
 		
-//		public void pythonEditor() throws IOException {
-//				
-//				WebElement try_editor_clear=(python_editor);
-//				String[] list = excel.fileReader()	;
-//				Actions actions= new Actions(driver);
-//				actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
-//			(python_editor).sendKeys(list[0]);
-//				(run).click();
-//				System.out.println("Output is :"+(output).getText());
-//				
-//				actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
-//				(python_editor).sendKeys(list[1]);
-//				(run).click();
-//				System.out.println("Alert is :"+driver.switchTo().alert().getText() );
-//				driver.switchTo().alert().accept();
-//					
-//					
-//				}
+		public void pythonEditor() throws IOException {
+				
+				WebElement try_editor_clear=(python_editor);
+				String[] list = excel.fileReader()	;
+				Actions actions= new Actions(driver);
+				actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
+			(python_editor).sendKeys(list[0]);
+				(run).click();
+				System.out.println("Output is :"+(output).getText());
+				
+				actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
+				(python_editor).sendKeys(list[1]);
+				(run).click();
+				System.out.println("Alert is :"+driver.switchTo().alert().getText() );
+				driver.switchTo().alert().accept();
+					
+					
+				}
 
 
 }
