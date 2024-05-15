@@ -1,4 +1,6 @@
 package dsalgostepdefinitions;
+import java.io.IOException;
+
 import org.junit.Assert;
 
 import dsalgodrivers.DriverFactory;
@@ -68,14 +70,8 @@ public class LinkedList_sd {
 	 Thread.sleep(2000);
 	}
 	@Then(": User should be redirected to the page having an tryEditor with a Run button to test")
-	public void user_should_be_redirected_to_the_page_having_an_try_editor_with_a_run_button_to_test() {
-		String currentUrl = "https://dsportalapp.herokuapp.com/tryEditor";
-		//This will check to make sure USA is a part of the URL, and doesn't exist as another part of the URL.
-		if(currentUrl.contains("/tryEditor")){
-			System.out.println("Current Url is"+ currentUrl);
-		} else {
-			System.out.println("Invalid URL");
-		}
+	public void user_should_be_redirected_to_the_page_having_an_try_editor_with_a_run_button_to_test() throws IOException {
+		linkedlist.pythonEditor();
 	}
 	@When(": The user clicks  Creating a Linked List button")
 	public void the_user_clicks_creating_a_linked_list_button() {

@@ -18,6 +18,7 @@ When : The user clicks on Opeartions in Stack
 Then : The user should be directed to the "Operations in Stack" of stack Page
 And : User clicks "Try here" button.
 Then : user should be redirected to the page having an tryEditor with a Run button to test
+#And : The user enter the python code and click Run
 
 @TC_Stack_03
 Scenario: User clicks on Implementation
@@ -32,5 +33,6 @@ When : The user clicks on Applications
 Then : The user should be directed to the "Applications" of stack Page
 And : User clicks "Try here" button.
 Then : user should be redirected to the page having an tryEditor with a Run button to test
+
 
 

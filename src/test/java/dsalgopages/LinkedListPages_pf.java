@@ -16,8 +16,9 @@ import dsalgoutilities.PythonExcelReader;
 public class LinkedListPages_pf {
 	
 	WebDriver driver;
-//	PythonExcelReader excel = new PythonExcelReader();
-//	@FindBy (xpath="//form[@id='answer_form']/div/div/div/textarea") WebElement python_editor;
+	PythonExcelReader excel = new PythonExcelReader();
+	@FindBy (xpath="//form[@id='answer_form']/div/div/div/textarea") WebElement python_editor;
+	@FindBy (xpath="//button[@type='button']") WebElement run;
 	//@FindBy (xpath = "//input[@name='username']")WebElement username;
 	@FindBy (xpath="//button[@type='button']") WebElement button;
 	@FindBy (xpath="//pre[@id='output']") WebElement output;
@@ -86,24 +87,24 @@ public class LinkedListPages_pf {
 		(insertion).click();
 	}
 	
-//public void pythonEditor() throws IOException {
-//		
-//		WebElement try_editor_clear=driver.findElement(python_editor);
-//		String[] list = excel.fileReader()	;
-//		Actions actions= new Actions(driver);
-//		actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
-//		driver.findElement(python_editor).sendKeys(list[0]);
-//		driver.findElement(run).click();
-//		System.out.println("Output is :"+driver.findElement(output).getText());
-//		
-//		actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
-//		(python_editor).sendKeys(list[1]);
-//		driver.findElement(run).click();
-//		System.out.println("Alert is :"+driver.switchTo().alert().getText() );
-//		driver.switchTo().alert().accept();
-//			
-//			
-//		}
+	public void pythonEditor() throws IOException {
+		
+		WebElement try_editor_clear=(python_editor);
+		String[] list = excel.fileReader()	;
+		Actions actions= new Actions(driver);
+		actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
+	(python_editor).sendKeys(list[0]);
+		(run).click();
+		System.out.println("Output is :"+(output).getText());
+		
+		actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
+		(python_editor).sendKeys(list[1]);
+		(run).click();
+		System.out.println("Alert is :"+driver.switchTo().alert().getText() );
+		driver.switchTo().alert().accept();
+			
+			
+		}
 	
 	public void  deletion() {
 		//driver.navigate().to("https://dsportalapp.herokuapp.com/linked-list/");
