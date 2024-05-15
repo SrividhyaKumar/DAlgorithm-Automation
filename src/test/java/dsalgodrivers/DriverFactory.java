@@ -23,7 +23,6 @@ public class DriverFactory {
 			if(browser.equalsIgnoreCase("chrome")) {
 				options.addArguments("headless");
 				options.addArguments("--headless");
-				options.addArguments("excludeSwitches",["ignore-certificate-errors"]);
                                 options.addArguments("--disable-gpu");
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--disable-gpu");
