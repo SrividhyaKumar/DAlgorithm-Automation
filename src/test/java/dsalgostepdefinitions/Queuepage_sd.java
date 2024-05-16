@@ -13,7 +13,6 @@ public class Queuepage_sd {
 	
 	@Given("The user is in the Queue page after logged in")
 	public void the_user_is_in_the_queue_page_after_logged_in() {
-		queuepage.home();
 		System.out.println("open the queue page");
 	
 	}
