@@ -15,7 +15,7 @@ public class Graphpage_sd {
 	@When(": The user clicks on Get Started button of Graph")
 	public void the_user_clicks_on_get_started_button_of_graph() {
 	  
-	  //  graphpage.clickgetstarted();
+	  graphpage.clickgetstarted();
 	    System.out.println("User clicks on Get Started");
 	}
 
@@ -27,7 +27,7 @@ public class Graphpage_sd {
 
 	@When(": The user clicks on Graph")
 	public void the_user_clicks_on_graph() {
-	   // graphpage.clickgraph();
+	   graphpage.clickgraph();
 	    
 	}
 
@@ -40,18 +40,18 @@ public class Graphpage_sd {
 	@Then(": The user clicks on {string} button..")
 	public void the_user_clicks_on_button(String string) {
 	    
-	   // graphpage.tryHere();
+	    graphpage.tryHere();
 	}
 
 	@Then(": user should be redirected to a page having an TryEditor with a Run button to test")
 	public void user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test() throws IOException {
-	   // graphpage.pythonEditor();
+	    graphpage.pythonEditor();
 	    
 	}
 
 	@When(": The user clicks on Graph Representations")
 	public void the_user_clicks_on_graph_representations() {
-	    //graphpage.clickgraphrepresentation();
+	    graphpage.clickgraphrepresentation();
 	    
 	}
 	
