@@ -1,4 +1,5 @@
 package dsalgopages;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,6 +20,7 @@ public class Queuepage_pf {
     @FindBy(xpath="//*[@id=\"answer_form\"]/button") WebElement RUN;
     @FindBy(xpath="//*[@id=\"output\"]") WebElement output;
     @FindBy(xpath="//*[@id=\"content\"]/li[3]/a") WebElement usingarray;
+    PythonExcelReader excel = new PythonExcelReader();
 	public Queuepage_pf(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -37,14 +39,21 @@ public class Queuepage_pf {
 		 System.out.println("click on tryhere");
 		 System.out.println("open the browser with run button page");
 	 }
-	 public void validcode() {
-		 System.out.println("enter the validcode");
-		 editor.sendKeys();
-		 RUN.click();
-		 System.out.println("click on run button");
-		 output.getText();
-		 System.out.println("output in console");
-	 }
+	 public void pythonEditor() throws IOException {
+	    	
+	    	WebElement try_editor_clear=editor;
+	    	String[] list = excel.fileReader();
+	    	editor.sendKeys(list[0]);
+	    	RUN.click();
+	    	System.out.println("Output is :"+output.getText());
+	    	Actions actions = new Actions(driver);
+	    	actions.click(try_editor_clear).keyDown(Keys.CONTROL).sendKeys("\u0061").sendKeys(Keys.BACK_SPACE).keyUp(Keys.CONTROL).perform();
+	    	editor.sendKeys(list[1]);
+	    	RUN.click();
+	    	System.out.println("Alert is :"+driver.switchTo().alert().getText() );
+	    	System.out.println("No error msg is diaplayed");
+	    	driver.switchTo().alert().accept();		
+	    	}
 
 	private void Hello(String string) {
 		// TODO Auto-generated method stub

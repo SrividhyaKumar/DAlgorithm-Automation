@@ -65,7 +65,7 @@ public class Arraypage_sd {
 	}
 
 	@Then("Nothing happens to the page and no error message is displayed")
-	public void nothing_happens_to_the_page_and_no_error_message_is_displayed() {
+	public void nothing_happens_to_the_page_and_no_error_message_is_displayed() throws IOException {
 		System.out.println("No error msg is diaplayed");
 	}
 }

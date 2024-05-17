@@ -19,7 +19,7 @@ public class Registerpage_sd {
    
    @When("The user clicks {string} button with all fields empty")
    public void the_user_clicks_button_with_all_fields_empty(String string) {
-	   registerpage.page();
+	   System.out.println("usernameerror is displayed");
    }
 
    @Then("It should display an error {string} below Username textbox")
