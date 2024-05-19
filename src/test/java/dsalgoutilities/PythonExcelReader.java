@@ -9,7 +9,7 @@ public class PythonExcelReader {
 
 	public String[] fileReader() throws IOException
 	{
-		FileInputStream fis = new FileInputStream("C:\\Users\\rajes\\Downloads\\DSAlgorithm-complete-test-master\\DSAlgorithm-complete-test-master\\dsalgo\\src\\test\\resources\\dsalgoexceldata\\ExcelData.xlsx");
+		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\dsalgoexceldata\\ExcelData.xlsx");
 		
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		
