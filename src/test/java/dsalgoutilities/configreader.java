@@ -11,7 +11,7 @@ package dsalgoutilities;
 			prop=new Properties();
 			try
 			{
-				FileInputStream ip=new FileInputStream("C:\\Users\\rajes\\eclipse-workspace\\DAlgorithm-Automation\\src\\test\\resources\\dsalgoconfiguration\\configuration.properties");
+				FileInputStream ip=new FileInputStream(".\\src\\test\\resources\\dsalgoconfiguration\\configuration.properties");
 				prop.load(ip);
 			}
 			catch (FileNotFoundException e)
